@@ -14,13 +14,6 @@ export default function NavigationBar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex gap-4 items-center">
-              <Image
-                className="h-8 w-8"
-                src="/main-logo.png"
-                alt="Logo"
-                width={100}
-                height={100}
-              />
               <Link href="/" className="font-bold">
                 Shaby Store
               </Link>
