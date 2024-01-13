@@ -4,6 +4,7 @@ import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function NavigationBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,6 +31,7 @@ export default function NavigationBar() {
                   {link.name}
                 </Link>
               ))}
+              <ThemeSwitch />
             </div>
           </div>
           {/* <a className="block md:hidden">MobileLogo</a> */}
@@ -95,6 +97,8 @@ export default function NavigationBar() {
                 ))}
               </ul>
             </div>
+
+            <ThemeSwitch />
           </div>
         </div>
       </div>
